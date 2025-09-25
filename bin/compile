@@ -12,7 +12,7 @@ NC='\033[0m' # No Color
 echo -e "${GREEN}-----> Custom Buildpack Starting${NC}"
 
 # Get the deploy target from environment variable
-DEPLOY_TARGET=${DEPLOY_TARGET:-"backend"}
+DEPLOY_TARGET=${DEPLOY_TARGET:-"frontend"}
 
 echo -e "${YELLOW}-----> Deploy Target: $DEPLOY_TARGET${NC}"
 
