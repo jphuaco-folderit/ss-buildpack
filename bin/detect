@@ -1,0 +1,8 @@
+#!/bin/bash
+# This script detects if this is a Python app
+if [ -f "requirements.txt" ] || [ -f "pyproject.toml" ]; then
+  echo "python"
+  exit 0
+else
+  exit 1
+fi

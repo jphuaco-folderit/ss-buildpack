@@ -1,0 +1,11 @@
+#!/bin/bash
+# This script provides release information to Heroku
+
+cat << EOF
+---
+addons: []
+config_vars:
+  PYTHONPATH: src
+default_process_types:
+  web: $(head -1 Procfile | cut -d: -f2- | xargs)
+EOF
